@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .form-section{
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+<h2>Survey Form</h2>
+<form>
+<!-- Multiple choice question -->
+<div class="form-section">
+<label for="mcq">1.What is your favorite color?</label><br>
+<input type="radio" id="red" name="favorite_color" value="red">
+<label for="red">Red</label><br>
+<input type="radio" id="green" name="favorite_color" value="green">
+<label for="green">Green</label><br>
+<input type="radio" id="blue" name="favorite_color" value="blue">
+<label for="blue">Blue</label><br>
+<input type="radio" id="yellow" name="favorite_color" value="yellow">
+<label for="yellow">Yellow</label><br>
+
+<!--Checkboxes for multiple selections -->
+<label for="hobbies">2.Select your hobbies?</label><br>
+<input type="checkbox" id="reading" name="hobbies" value="reading">
+<label for="reading">Reading</label><br>
+<input type="checkbox" id="travelling" name="hobbies" value="travelling">
+<label for="travelling">Travelling</label><br>
+<input type="checkbox" id="singing" name="hobbies" value="singing">
+<label for="singing">Singing</label><br>
+<input type="checkbox" id="cooking" name="hobbies" value="cooking">
+<label for="cooking">Cooking</label><br>
+
+<!--Short Answer Text -->
+<label for="short_answer">3.Which is your favorite book?</label><br>
+<input type="text" id="short_answer" name="favorite_book" placeholder="Your answer"><br>
+
+<!--Long Answer Text -->
+<label for="long_answer">4.Share your thoughts on our service?</label><br>
+<textarea id="long_answer" name="services" rows="4" cols="50" placeholder="your thoughts"></textarea><br>
+
+<!--Rating scale -->
+<label for="rating">5.Rate our services</label><br>
+<input type="radio" id="rate1" name="rating" value="1">
+<label for="rate1">1</label>
+<input type="radio" id="rate2" name="rating" value="2">
+<label for="rate1">2</label>
+<input type="radio" id="rate3" name="rating" value="3">
+<label for="rate1">3</label>
+<input type="radio" id="rate4" name="rating" value="4">
+<label for="rate4">4</label>
+<input type="radio" id="rate5" name="rating" value="5">
+<label for="rate5">5</label><br>
+
+<!--Dropdown menu -->
+<label for="dropdown">6.Select your preferred category:</label><br>
+<select id="category" name="category">
+<option value="Technology">Technology</option>
+<option value="Science">Science</option>
+<option value="Arts">Arts</option>
+<option value="Music">Music</option>
+</select><br><br>
+
+<!--Radio button for selecting single option -->
+<label for="contact">7.Would you like to recieve updates?</label><br>
+<input type="radio" id="yes" name="contact" value="yes">
+<label for="yes">Yes</label><br>
+<input type="radio" id="no" name="contact" value="no">
+<label for="no">No</label><br><br>
+
+<button type="submit">Submit</button>
+
+</div>
+</form>
+</body>
+</html>
